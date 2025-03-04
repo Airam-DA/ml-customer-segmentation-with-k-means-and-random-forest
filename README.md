@@ -17,6 +17,10 @@ Leveraging machine learning:
 - **Increases accuracy**, improving predictions and strategies.
 ---
 
+![streamlit](https://github.com/user-attachments/assets/64ccb1bf-3842-46cd-99bf-df22839300ce)
+
+---
+
 # Table of Contents
 
 1. [Data Exploration & Preprocessing](#data-exploration--preprocessing)  
@@ -194,7 +198,7 @@ with open('best_rf.pkl', 'wb') as f:
 The model was deployed using Streamlit for interactive customer segmentation. The app allows users to:
 - Input customer attributes.
 - View predicted customer segments.
-- Explore segmentation insights interactively.
+- Explore visual segmentation insights interactively.
 
 To run the Streamlit app:
 ```bash
