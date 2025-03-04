@@ -17,7 +17,7 @@ Leveraging machine learning:
 - **Increases accuracy**, improving predictions and strategies.
 ---
 
-![streamlit](https://github.com/user-attachments/assets/64ccb1bf-3842-46cd-99bf-df22839300ce)
+![streamlit](https://github.com/user-attachments/assets/0297dfb5-c799-4b32-9fcd-fd45c4c7be4e)
 
 ---
 
