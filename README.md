@@ -51,9 +51,11 @@ Leveraging machine learning:
 
 7. [How to Run](#how-to-run)  
 
-8. [Technologies Used](#technologies-used)  
+8. [Technologies Used](#technologies-used)
 
-9. [License](#license)
+9. [File Structure](#file-structure)
+
+10. [License](#license)
     
 ---
 
@@ -188,9 +190,9 @@ best_params = grid_search.best_params_
 ### Fitting on Full Data & Saving Random Forest for Predictions:
 
 ```python
-best_rf.fit(X, y)
-with open('best_rf.pkl', 'wb') as f:
-    pickle.dump(best_rf, f))
+rf.fit(X, y)
+with open('rf.pkl', 'wb') as f:
+    pickle.dump(rf, f))
 ```
 ---
 
@@ -240,5 +242,28 @@ This project demonstrates the power of machine learning for customer segmentatio
 - **Scikit-Learn** (ML Models)
 - **Streamlit** (Deployment)
 
-## 9. License
+## 9. File Structure
+
+```
+├── data/
+│   ├── raw_customer_data.csv                  # Original dataset with customer data
+│   └── clustered_customer_data.csv            # Data after applying K-Means clustering
+├── notebooks/
+│   ├── ml_segmentation.ipynb                  # Notebook for K-Means segmentation and model creation
+│   └── ml_segmentation_with_functions.ipynb   # Notebook with functions included (beginner friendly)
+├── main.py                                    # Main Python script that runs the models
+├── models/
+│   ├── kmeans.pkl                             # Saved K-Means model
+│   └── rf.pkl                                 # Saved Random Forest model
+├── streamlit/
+│   ├── app.py                                 # Streamlit app to visualize and interact with the segmentation
+│   └── config.toml                            # Customization file for the Streamlit app
+├── viz/                                       # Visualization of data
+├── presentation.pdf                           # Presentation summarizing the project
+├── requirements.txt                           # Python dependencies
+├── README.md                                  # Project documentation
+└── LICENSE                                    # Project license file
+```
+
+## 10. License
 This project is open-source and available under the [MIT License](LICENSE).
